@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Settings</h1>
+    <h3 class="sub-line">Manage your account settings and set e-mail preferences.</h3>
+    <br>
+    <br>
+    <div class="container">
+        <div class="tab-container">
+            <button id="proBtn">Profile</button>
+            <button id="accBtn">Account</button>
+            <button id="appBtn">Appearance</button>
+            <button id="notBtn">Notification</button>
+            <button id="disBtn">Display</button>
+        </div>
+        <div class="content-container">
+            <div id="profile" class="profile active">
+                <div class="content">
+                    <h2>Profile</h2>
+                    <h4 class="sub-line">This is how others will see you on the site.</h4>
+                    <br>
+                    <form action="">
+                        <br>
+                        <label for="username"><b>Username</b></label>
+                        <input type="text" id="username">
+                        <p class="sub-line">This is your public display name. It can be your real name or pseudonym. You can only change this once every 30 days.</p>
+                        <br>
+                        <label for="email"><b>Email</b></label>
+                        <select id="email">
+                            <option value="m@example.com">m@example.com</option>
+                            <option value="m@google.com">m@google.com</option>
+                            <option value="m@support.com">m@support.com</option>
+                        </select>
+                        <p class="sub-line">You can manage verified email addresses in your email settings.</p>
+                        <br>
+                        <label for="bio"><b>Bio</b></label>
+                        <input type="text" id="bio">
+                        <p class="sub-line">You can @mention other users and organizations to link to them.</p>
+                        <br>
+                        <label for="urls"><b>URLs</b></label>
+                        <p class="sub-line">Add links to your website, blog, or social media profiles.</p>
+                        <input type="url" id="urls">
+                        <input type="url" id="urls">
+                        <button class="subBtn"><b>Add URL</b></button>
+                        <br>
+                        <button class="updateBtn">Update profile</button>
+                    </form>
+                </div>
+            </div>
+            <div id="account" class="account">
+                <div class="content">
+                    <h2>Account</h2>
+                    <h4 class="sub-line">Update your account settings. Set your preferred language and timezone.</h4>
+                    <br>
+                    <form action="">
+                        <br>
+                        <label for="name"><b>Name</b></label>
+                        <input type="text" id="name" placeholder="Your Name">
+                        <p class="sub-line">This is the name that will be displayed on your profile and in emails.</p>
+                        <br>
+                        <label for="dob"><b>Date of birth</b></label>
+                        <input type="date" placeholder="Pick a date">
+                        <p class="sub-line">Your date of birth is used to calculate your age.</p>
+                        <br>
+                        <label for="language"><b>Language</b></label>
+                        <input type="text" id="language">
+                        <p class="sub-line">This is the language that will be used in the dashboard.</p>
+                        <br>
+                        <button class="updateBtn">Update account</button>
+                    </form>
+                </div>
+            </div>
+            <div id="appearance" class="appearance">
+                <div class="content">
+                    <h2>Appearance</h2>
+                    <h4 class="sub-line">Customize the appearance of the app. Automatically switch between day and night themes.</h4>
+                    <br>
+                    <form action="">
+                        <br>
+                        <label for="font"><b>Font</b></label>
+                        <select id="font">
+                            <option value="inter">Inter</option>
+                            <option value="manerope">Manrope</option>
+                            <option value="system">System</option>
+                        </select>
+                        <p class="sub-line">Set the font you want to use in the dashboard.</p>
+                        <br>
+                        <label for="name"><b>Theme</b></label>
+                        <p class="sub-line">Select the theme for the dashboard.</p>
+                        <div class="theme">
+                            <div class="light">
+                                Light
+                            </div>
+                            <div class="dark">
+                                Dark
+                            </div>
+                        </div>
+                        <br>
+                        <button class="updateBtn">Update preferences</button>
+                    </form>
+                </div>
+            </div>
+            <div id="display" class="display">
+                <div class="content">
+                    <h2>Display</h2>
+                    <h4 class="sub-line">Turn items on or off to control what's displayed in the app.</h4>
+                    <br>
+                    <div>
+                        <ul style="list-style: none; text-align: start;">
+                            <li style="display: flex; justify-content: start;">
+                              <input type="checkbox" id="recent" checked>
+                              <label for="recent">Recents</label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="home" checked>
+                              <label for="home">Home</label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="application">
+                              <label for="application">Application</label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="desktop">
+                              <label for="desktop">Desktop</label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="downloads">
+                              <label for="downloads">Downloads</label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="documents">
+                              <label for="documents">Documents</label>
+                            </li>
+                        </ul>
+                        <br>
+                        <br>
+                        <button class="updateBtn">Update display</button>
+                    </div>
+                </div>
+            </div>                
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
